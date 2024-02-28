@@ -6,6 +6,7 @@ import { themeColors } from "../theme";
 import Categories from "../components/Categories";
 import { featured } from "../constants";
 import FeatureRow from "../components/FeaturedRow";
+import "react-native-random-uuid";
 
 const HomeScreen = () => {
   return (
@@ -50,7 +51,11 @@ const HomeScreen = () => {
 
         {/* featured */}
         <View className="mt-5">
-          {[featured, featured, featured]?.map((category) => {
+          {[
+            featured,
+            { ...featured, id: crypto.randomUUID() },
+            { ...featured, id: crypto.randomUUID() },
+          ]?.map((category) => {
             return (
               <FeatureRow
                 key={category.id}

@@ -43,7 +43,7 @@ export const featured = {
   restaurants: [
     {
       id: 1,
-      name: "Kante Food",
+      name: "Burger King",
       image: require("../assets/images/burgerDish.jpg"),
       description: "Hot and spicy pizzas",
       lng: -85.5324269,
@@ -78,7 +78,7 @@ export const featured = {
     },
     {
       id: 2,
-      name: "Kante Food",
+      name: "Lahmacun",
       image: require("../assets/images/differentDish.jpg"),
       description: "Hot and spicy pizzas",
       lng: -85.5324269,
@@ -113,7 +113,7 @@ export const featured = {
     },
     {
       id: 3,
-      name: "Kante Food",
+      name: "Spicy Pizza",
       image: require("../assets/images/pizza.png"),
       description: "Hot and spicy pizzas",
       lng: -85.5324269,

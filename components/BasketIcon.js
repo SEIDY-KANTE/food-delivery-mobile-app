@@ -1,14 +1,18 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 
 import { themeColors } from "../theme";
 
 export default function BasketIcon() {
+  const navigation = useNavigation();
+
   return (
     <View className="absolute bottom-5 w-full z-50">
       <TouchableOpacity
         style={{ backgroundColor: themeColors.bgColor(1) }}
         className="flex-row justify-between items-center mx-5 rounded-full p-4 py-3 shadow-lg"
+        onPress={() => navigation.navigate("CartScreen")}
       >
         <View
           className="p-2 px-4 rounded-full"
